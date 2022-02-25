@@ -9,6 +9,12 @@
 - [MySQL](https://www.mysql.com/)
 - [Git](https://git-scm.com/)
 
+### Запуск:
+- git clone https://github.com/Ogoyukin/doska.git
+- go mod tidy - Скачать зависиости
+- go build - Собрать проект(компиляция)
+- Запустить исполняемый файл: для windows doska.exe, для \*nix системых ./doska
+
 ## Roadmap (Дорожная карта):
 ### MVP
 - Шаблон страницы с контентом пользователя (КП)
