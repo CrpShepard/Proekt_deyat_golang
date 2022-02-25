@@ -10,7 +10,7 @@
 - [Git](https://git-scm.com/)
 
 ### Запуск:
-- git clone https://github.com/Ogoyukin/doska.git
+- git clone https://github.com/CrpShepard/Proekt_deyat_golang.git
 - go mod tidy - Скачать зависиости
 - go build - Собрать проект(компиляция)
 - Запустить исполняемый файл: для windows doska.exe, для \*nix системых ./doska
