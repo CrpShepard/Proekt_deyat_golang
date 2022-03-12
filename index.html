@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/script.js"></script>
+        <title>Homepage</title>
+        {{$posts := .Posts}}
+        {{$contents := .Contents}}
+        {{$commentarys := .Commentarys}}
+        {{$users := .Users}}
+        {{$categorys := .Categorys}}
+        {{$metas := .Metas}}
+        {{$scores := .Scores}}
+    </head>
+    <body>
+        <div class="head">
+            <div class="homebtn">Домой</div>
+            <div class="addbtn">+</div>
+            <div class="search">Поиск</div>
+            <div class="profilebtn">Профиль</div>
+        </div>
+        <div class="left_column">
+            <div class="category">Категории:<br></div>
+            <div class="meta"></div>
+        </div>
+        <div class="sort">
+            <div class="sort_hot"></div>
+            <div class="sort_top"></div>
+            <div class="sort_new"></div>
+            <div class="sort_home"></div>
+            <div class="sort_pop"></div>
+        </div>
+        <div class="content_area">
+            {{range $post := $posts}}
+            <div id="post_{{$post.Id}}" class="post_area">
+                {{if $post.User_id}}
+                    {{$ui := $post.User_id}}
+                    {{$p_date := $post.Date}}
+                    {{range $user := $users}}
+                        {{if eq $ui $user.Id}}
+                        <p class="post_meta">u/{{$user.Name}} on {{$p_date}}</p>
+                        {{else}}
+
+                        {{end}}
+                    {{end}}
+                {{else}}
+
+                {{end}}
+                <p class="post_name">{{$post.Name}}</p>
+                {{if $post.Content_id}}
+                    {{$ci := $post.Content_id}}
+                    {{range $content := $contents}}
+                        {{if eq $ci $content.Id}}
+                        <img class="post_img" src="image/{{$content.Name}}">
+                        {{else}}
+
+                        {{end}}
+                    {{end}}
+                {{else}}
+                <p><br></p>
+                {{end}}
+                <p id="post_cat_{{$post.Id}}" hidden="true">{{$post.Category_id}}</p>
+                <p id="post_meta_{{$post.Id}}" hidden="true">{{$post.Meta_id}}</p>
+                <div class="post_upvote">+</div>
+                <p class="post_score">Score</p>
+                <div class="post_downvote">-</div>
+                <div class="post_more">:</div>
+                <div class="post_comment_img">img</div>
+                <p class="post_comment_count">Comm count</p>
+            </div>
+            {{end}}
+        </div>
+    </body>
+</html>

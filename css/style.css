@@ -1,0 +1,192 @@
+body{
+    overflow-x: hidden;
+    background: #e0e0d1;
+}
+div{
+    border-color: black;
+    border: solid 4px;
+    background: #666699;
+}
+.head{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+}
+.homebtn{
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    left: 5%;
+    top: 25px;
+}
+.addbtn{
+    position: fixed;
+    left: 25%;
+    top: 25px;
+    width: 50px;
+    height: 50px;
+}
+.search{
+    position: fixed;
+    left: 40%;
+    top: 25px;
+    width: 300px;
+    height: 50px;
+}
+.profilebtn{
+    position: fixed;
+    left: 75%;
+    top: 25px;
+    width: 250px;
+    height: 50px;
+}
+.left_column{
+    position: absolute;
+    box-sizing: border-box;
+    top: 100px;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 250px;
+    height: 1500px;
+}
+.category{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 185px;
+    height: 1000px;
+}
+.meta{
+    position: absolute;
+    top: 1050px;
+    left: 25px;
+    width: 185px;
+    height: 420px;
+}
+.sort{
+    position: absolute;
+    box-sizing: border-box;
+    margin: 20px;
+    top: 100px;
+    left: 250px;
+    width: 85%;
+    height: 100px;
+}
+.sort_hot{
+    position: absolute;
+    left: 5%;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+}
+.sort_top{
+    position: absolute;
+    left: 15%;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+}
+.sort_new{
+    position: absolute;
+    left: 25%;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+}
+.sort_home{
+    position: absolute;
+    left: 70%;
+    top: 20px;
+    width: 150px;
+    height: 50px;
+}
+.sort_pop{
+    position: absolute;
+    left: 85%;
+    top: 20px;
+    width: 150px;
+    height: 50px;
+}
+.content_area{
+    position: absolute;
+    box-sizing: border-box;
+    margin: 20px;
+    top: 220px;
+    left: 250px;
+    width: 85%;
+    height: 1380px;
+}
+.post_area{
+    position: absolute;
+    margin: 20px;
+    width: 480px;
+    background-color: #52527a;
+}
+.post_meta{
+    margin-right: 6px;
+    font-size: 13px;
+    text-align: right;
+    line-height: 0px;
+}
+.post_name{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 26px;
+    line-height: 2px;
+}
+.post_img{
+    width: 480px;
+    height: 320px;
+    object-fit: contain;   
+}
+.post_upvote{
+    display: inline-block;
+    position: relative;
+    box-sizing: content-box;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+}
+.post_downvote{
+    display: inline-block;
+    position: relative;
+    box-sizing: content-box;
+    left: 60px;
+    width: 40px;
+    height: 40px;
+}
+.post_score{
+    line-height: 0px;
+    display: inline-block;
+    position: relative;
+    box-sizing: content-box;
+    left: 40px;
+    width: 40px;
+}
+.post_more{
+    display: inline-block;
+    position: relative;
+    box-sizing: content-box;
+    left: 90px;
+    width: 20px;
+    height: 40px;
+}
+.post_comment_img{
+    display: inline-block;
+    position: relative;
+    box-sizing: content-box;
+    left: 120px;
+    width: 50px;
+    height: 40px;
+}
+.post_comment_count{
+    line-height: 0px;
+    display: inline-block;
+    position: relative;
+    box-sizing: content-box;
+    left: 140px;
+    width: 100px;
+}
