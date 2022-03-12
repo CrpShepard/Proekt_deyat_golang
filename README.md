@@ -50,4 +50,4 @@
 - Логика управления КП
 
 ## Скриншот
-![alt text](https://github.com/CrpShepard/Proekt_deyat_golang/tree/main/screenshot/mainpage.jpg?raw=true)
+![alt text](https://github.com/CrpShepard/Proekt_deyat_golang/blob/main/screenshot/mainpage.jpg?raw=true)
