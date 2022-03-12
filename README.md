@@ -50,5 +50,9 @@
 - Шаблон управления КП
 - Логика управления КП
 
+### Система оценивания (Очки, лайки)
+- Шаблон оценивания КП
+- Логика оценивания КП
+
 ## Скриншот
 ![alt text](https://github.com/CrpShepard/Proekt_deyat_golang/blob/main/screenshot/mainpage.jpg?raw=true)
